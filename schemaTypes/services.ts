@@ -84,6 +84,11 @@ export default defineType({
               type: 'string',
             }),
             defineField({
+              name: 'serviceItemDescription',
+              title: 'Explain About Service',
+              type: 'string',
+            }),
+            defineField({
               name: 'serviceDescription',
               title: 'Service Description',
               type: 'reference',
