@@ -31,7 +31,6 @@ export default defineType({
       title: 'Short Description For Service Description',
       type: 'text',
     }),
-
     defineField({
       name: 'tagLine',
       title: 'Title For Tag Line Section',
