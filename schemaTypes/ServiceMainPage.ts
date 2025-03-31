@@ -7,7 +7,7 @@ export default defineType({
   fields: [
     defineField({
       name: 'title',
-      title: 'Title For Service Description',
+      title: 'Title',
       type: 'text',
     }),
     defineField({
@@ -31,6 +31,18 @@ export default defineType({
       title: 'Short Description For Service Description',
       type: 'text',
     }),
+
+    defineField({
+      name: 'tagLine',
+      title: 'Title For Tag Line Section',
+      type: 'text',
+    }),
+    defineField({
+      name: 'tagDescription',
+      title: 'Short Description For Tag Line Section',
+      type: 'text',
+    }),
+
   ],
   preview: {
     select: {
