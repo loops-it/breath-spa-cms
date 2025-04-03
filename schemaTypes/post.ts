@@ -26,6 +26,14 @@ export default defineType({
       to: {type: 'author'},
     }),
     defineField({
+      name: 'feturedImage',
+      title: 'Fetured image',
+      type: 'image',
+      options: {
+        hotspot: true,
+      },
+    }),
+    defineField({
       name: 'mainImage',
       title: 'Main image',
       type: 'image',
@@ -45,6 +53,11 @@ export default defineType({
       type: 'datetime',
     }),
     defineField({
+      name: 'feturedText',
+      title: 'Featured Text',
+      type: 'string',
+    }),
+    defineField({
       name: 'body',
       title: 'Body',
       type: 'blockContent',
@@ -55,7 +68,7 @@ export default defineType({
     select: {
       title: 'title',
       author: 'author.name',
-      media: 'mainImage',
+      media: 'feturedImage',
     },
     prepare(selection) {
       const {author} = selection

@@ -20,7 +20,7 @@ export default defineType({
     }),
     defineField({
       name: 'servicesHeroImage',
-      title: 'Inner Page Hero Section Image',
+      title: 'Hero Section Image',
       type: 'image',
       options: {
         hotspot: true,

@@ -5,5 +5,15 @@ import author from './author'
 import serviceCategory from './services'
 import serviceDescription from './serviceCategories'
 import ServiceMainPage from './ServiceMainPage'
+import aboutMainPage from './aboutMainPage'
+import testimonials from './testimonials'
+import exclusiveDeals from './exclusiveDeals'
+import siteData from './siteData'
+import Ethos from './Ethos'
+import team from './team'
+import termsAndConditions from './terms'
+import home from './home'
+import contactSubmission from './contactSubmission'
+import contactSettings from './contactSettings'
 
-export const schemaTypes = [post, author, category, blockContent, serviceCategory,serviceDescription, ServiceMainPage]
+export const schemaTypes = [siteData, home, Ethos, testimonials, team, exclusiveDeals, serviceCategory,serviceDescription, ServiceMainPage, aboutMainPage, post, author, category, blockContent, termsAndConditions, contactSettings, contactSubmission]

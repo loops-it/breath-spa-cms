@@ -20,6 +20,11 @@ export default defineType({
       },
     }),
     defineField({
+      name: 'homeDescription',
+      title: 'Short Description For Home Services',
+      type: 'text',
+    }),
+    defineField({
       name: 'mainImage',
       title: 'Service Main Page Image',
       type: 'image',
