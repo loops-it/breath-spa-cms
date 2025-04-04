@@ -15,5 +15,6 @@ import termsAndConditions from './terms'
 import home from './home'
 import contactSubmission from './contactSubmission'
 import contactSettings from './contactSettings'
+import contactMain from './contact'
 
-export const schemaTypes = [siteData, home, Ethos, testimonials, team, exclusiveDeals, serviceCategory,serviceDescription, ServiceMainPage, aboutMainPage, post, author, category, blockContent, termsAndConditions, contactSettings, contactSubmission]
+export const schemaTypes = [siteData, home, Ethos, testimonials, team, exclusiveDeals, serviceCategory,serviceDescription, ServiceMainPage, aboutMainPage, post, author, category, blockContent, termsAndConditions, contactSettings, contactSubmission, contactMain]

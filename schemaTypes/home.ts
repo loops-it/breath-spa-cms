@@ -51,7 +51,7 @@ export default defineType({
     defineField({
       name: 'sectionOneButtonLink',
       title: 'Home Button Link',
-      type: 'url',
+      type: 'string',
     }),
 
     // second sec
@@ -81,7 +81,7 @@ export default defineType({
       defineField({
         name: 'sectionTwoButtonLink',
         title: 'Location Button Link',
-        type: 'url',
+        type: 'string',
       }),
 
   ],

@@ -49,7 +49,7 @@ export default defineType({
               {
                 title: 'URL',
                 name: 'href',
-                type: 'url',
+                type: 'string',
               },
             ],
           },

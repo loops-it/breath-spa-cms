@@ -41,7 +41,7 @@ export default defineType({
     defineField({
       name: 'sectionOneButtonLink',
       title: 'About Breath Button Link',
-      type: 'url',
+      type: 'string',
     }),
 
     // second sec
@@ -71,7 +71,7 @@ export default defineType({
       defineField({
         name: 'sectionTwoButtonLink',
         title: 'Why Choose Us Button Link',
-        type: 'url',
+        type: 'string',
       }),
 
   ],
