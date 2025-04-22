@@ -1,5 +1,5 @@
 import { defineField, defineType } from 'sanity'
-
+// 123
 export default defineType({
   name: 'newsletter',
   title: 'Newsletter',
