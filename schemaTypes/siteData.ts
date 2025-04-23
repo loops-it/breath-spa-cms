@@ -88,6 +88,11 @@ export default defineType({
                 type: 'text',
               }),
               defineField({
+                name: 'name',
+                title: 'Name',
+                type: 'text',
+              }),
+              defineField({
                 name: 'icon',
                 title: 'Icon',
                 type: 'image',
