@@ -1,4 +1,4 @@
-import { defineField, defineType } from 'sanity'
+import {defineField, defineType} from 'sanity'
 
 export default defineType({
   name: 'serviceCategory',
@@ -8,7 +8,7 @@ export default defineType({
     defineField({
       name: 'title',
       title: 'Title',
-      type: 'string',
+      type: 'string'
     }),
     defineField({
       name: 'slug',
@@ -16,21 +16,21 @@ export default defineType({
       type: 'slug',
       options: {
         source: 'title',
-        maxLength: 96,
-      },
+        maxLength: 96
+      }
     }),
     defineField({
       name: 'homeDescription',
       title: 'Short Description For Home Services',
-      type: 'text',
+      type: 'text'
     }),
     defineField({
       name: 'mainImage',
       title: 'Service Main Page Image',
       type: 'image',
       options: {
-        hotspot: true,
-      },
+        hotspot: true
+      }
     }),
 
     defineField({
@@ -38,41 +38,40 @@ export default defineType({
       title: 'Inner Page Hero Section Image',
       type: 'image',
       options: {
-        hotspot: true,
-      },
+        hotspot: true
+      }
     }),
     defineField({
       name: 'innerHeroTitle',
       title: 'Inner Page Hero Title',
-      type: 'text',
+      type: 'text'
     }),
     defineField({
       name: 'servicesImage',
       title: 'Inner Page Image',
       type: 'image',
       options: {
-        hotspot: true,
-      },
+        hotspot: true
+      }
     }),
 
 
     defineField({
       name: 'categoryTitle',
       title: 'Title For Service Description',
-      type: 'text',
+      type: 'text'
     }),
     defineField({
       name: 'description',
       title: 'Short Description For Service Description',
-      type: 'text',
+      type: 'text'
     }),
     defineField({
       name: 'categoryDescription',
       title: 'Detailed Description For Service Description',
-      type: 'text',
+      type: 'blockContent'
     }),
-    
-    
+
 
     // Services
     defineField({
@@ -86,18 +85,18 @@ export default defineType({
             defineField({
               name: 'serviceName',
               title: 'Service Name',
-              type: 'string',
+              type: 'string'
             }),
             defineField({
               name: 'serviceItemDescription',
               title: 'Explain About Service',
-              type: 'string',
+              type: 'string'
             }),
             defineField({
               name: 'serviceDescription',
               title: 'Service Description',
               type: 'reference',
-              to: [{ type: 'serviceDescription' }],
+              to: [{type: 'serviceDescription'}]
             }),
             defineField({
               name: 'pricing',
@@ -110,31 +109,31 @@ export default defineType({
                     defineField({
                       name: 'duration',
                       title: 'Duration',
-                      type: 'string',
+                      type: 'string'
                     }),
                     defineField({
                       name: 'price',
                       title: 'Price',
-                      type: 'number',
+                      type: 'number'
                     }),
                     defineField({
                       name: 'priceDescription',
                       title: 'Any Description for Price',
-                      type: 'string',
-                    }),
-                  ],
-                },
-              ],
-            }),
-          ],
-        },
-      ],
-    }),
+                      type: 'string'
+                    })
+                  ]
+                }
+              ]
+            })
+          ]
+        }
+      ]
+    })
   ],
   preview: {
     select: {
       title: 'title',
-      media: 'mainImage',
-    },
-  },
+      media: 'mainImage'
+    }
+  }
 })
