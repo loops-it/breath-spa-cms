@@ -5,9 +5,9 @@ import {schemaTypes} from './schemaTypes'
 
 export default defineConfig({
   name: 'default',
-  title: 'breath-spa-cms',
+  title: 'breath-cms',
 
-  projectId: '0niaw5c6',
+  projectId: 'lgb4nu8a',
   dataset: 'breath-spa',
 
   plugins: [structureTool(), visionTool()],
